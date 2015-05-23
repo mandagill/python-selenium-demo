@@ -4,4 +4,5 @@ import selenium_setup
 
 selenium_setup.setup()
 tests.make_purchase.make_purchase()
+tests.make_purchase.make_CA_purchase()
 selenium_setup.teardown()
