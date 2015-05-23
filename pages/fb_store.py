@@ -32,7 +32,7 @@ def go_to_store():
 	        EC.presence_of_element_located((By.Text, "Shopping cart"))
 	    )
 	except:
-		# take a screencap
+		# ideally, would also take a screencap
 		return "Test failed"
 
 
@@ -73,14 +73,13 @@ def enter_billing_address(state_to_enter=None):
 	zipcode_field.send_keys(STATES[state_to_enter]['billing-address-postal-code'])
 
 
-
 # def choose_shipping_option(ss.driver, shipping_type='FREE'):
 # 	radio_buttons = find_elements(by='data-qa', value='shipping-method-name')
 
 # 	if shipping_type == 'PAID':
 # 		# randomly choose a ship type
 # 	else:
-# 		# populate the shipping option with 
+# 		# allow shipping option to remain default
 # 	pass
 
 

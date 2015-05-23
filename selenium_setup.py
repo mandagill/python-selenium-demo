@@ -12,9 +12,8 @@ def setup():
 	
 		
 
-def teardown(driver):
+def teardown():
 	# Would also close any open DB connections if they existed. 
-	results_file.close()
 	driver.close()
 
 
