@@ -9,19 +9,9 @@ def setup():
 	# setup DB connections as needed "postgresql://localhost:5432/TestMigrate"
 	global driver
 	driver = webdriver.Firefox()
-	
 		
 
 def teardown():
 	# Would also close any open DB connections if they existed. 
 	driver.close()
 
-
-
-
-# assert "Python" in driver.title
-# elem = driver.find_element_by_name("q")
-# elem.send_keys("pycon")
-# elem.send_keys(Keys.RETURN)
-# assert "No results found." not in driver.page_source
-# driver.close()	
